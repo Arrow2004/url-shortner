@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Url Shortner app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="./styles/home.css">
+</head>
+<body>
+    <header>
+        <nav class="light-blue lighten-5 blue-text">
+            <ul>
+                <li>Home</li>
+                <li>API</li>
+                <li>sign in/up</li>
+            </ul>
+            <ul>
+                <li>GitHub</li>
+                <li>Instagram</li>
+                <li>Telegram</li>
+                <li>YouTube</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="info blue-text text-darken-2">
+            <p>Assalomu alaykum. Bu <b> url-shortner</b>(url qisqartiruvchi) dasturi <b> Akbar Abdusattorov</b> tomonidan yaratildi!!!(uz)</p>
+            <p>Hello there. This <b> url-shortner</b> app was created by <b> Akbar Abdusattorov </b> !!! (en)</p>
+            <p>Привет. Эта программа для <b> url-shortner</b>(сокращения URL-адресов) была создана <b> Акбаром Абдусатторовым </b> !!! (en)</p>
+        </div>
+        <input type="text" name='fulllUrl' id="urlInput">
+        <button class="waves-effect waves-light light-blue" id="submit">Kichraytirmoq</button>
+        <div id="results">
+            You short url:
+        </div>
+        <button class="waves-effect waves-light light-blue" id='clipboardB' onclick="copyFunction()"> Copy short url </button>
+        <input type="text" id="clipboard" style="display: none;">
+    </main>
+    <footer class="light-blue lighten-5 blue-text">
+        Developed by akbarcoder
+    </footer>   
+    <script src="./app/app.js"></script>
+</body>
+</html>
